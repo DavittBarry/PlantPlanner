@@ -23,7 +23,7 @@ To launch the application you need to open **two** terminal windows and run the 
 
 ### .env files
 
-Create .env files and configurate the link for you databases
+Create .env files and configurate the link for your databases
 
 `src/config/config.env`
 
