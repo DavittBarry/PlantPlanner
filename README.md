@@ -1,8 +1,9 @@
-# PlantPlanner - app to organize your plants
+# PlantPlanner - an app to organize your plants
 
 Simple web service created with **React**
 ## Introduction
-We're four front-end web developments **students**. Goal of this dynamic group project is to **learn** how to develop a web service as a group and **utilize** its technologies.
+
+This is a forked project continued from the previous version of PlantPlanner (contributers can be found here: https://github.com/EdvardJ/PlantPlanner). Application is intended to help users put their plants on a database that reminds them to water the plants at the right time, gives them info about the plant and also displays local and foreign weather.
 
 ## Technologies
 
