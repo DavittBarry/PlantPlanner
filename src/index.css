@@ -1,0 +1,301 @@
+/* Home Page */
+.home {
+  margin: auto;
+  width: 80%;
+  background-color: #CDE77F;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.349);
+}
+
+/* Plant cards */
+.PlantCard, .slider, .landing-page{
+  background-color: #CDE77F;
+  margin: auto;
+  width: 50%;
+  padding: 2rem;
+}
+.flex {
+  display: flex;
+}
+.flex-jc-sb-a-c {
+  justify-content: space-between;
+  align-items: center;
+}
+h2{
+    text-align: center;
+}
+#textField{
+  max-width:50%;
+  display: inline-block;
+  text-align: center;
+  font-weight:bold;
+  display:inline-block;
+}
+#imgDiv{
+  display:inline-block;
+  width:50%;
+}
+#indicatorCont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    height: 150px;
+}
+.indicator{
+  border: 1px solid #000;
+  
+  padding: 5px;
+  background-color: #E6F8B2;
+}
+.colorInd{
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+}
+/* Plants cards color indicators */
+#color1{
+  background-color: blue;
+}
+#color2{
+    background-color: red;
+}
+#color3{
+    background-color: green;
+}
+#color4{
+    background-color: yellow;
+}
+/* Header */
+.page-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F7F7F7;
+}
+
+.page-header div {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+}
+/* Footer */
+.page-footer {
+  position: auto;
+  height: 160px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background-color: #709176;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+}
+
+.page-footer h2 {
+  /* Remove gap between content div and footer div h2 */
+  margin: 0 auto;
+}
+
+.page-footer ul {
+  display: inline-block;
+  list-style: none;
+  /* Padding to center list */
+  padding: 5px 0 0 0;
+}
+
+.page-footer li, a {
+  padding: 0 0 5px 0;
+  color: black;
+  text-decoration: none;
+}
+/* Navbar */
+.navbar{
+  background-color: #E6F8B2;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+}
+
+
+/* Login Page */
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.login-page .form .login{
+  margin-top: -31px;
+  margin-bottom: 26px;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg,#709176,#CDE77F);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+/* Introduction part in login page */
+
+.introduction {
+  width: 50%;
+  padding: 3%;
+  margin: auto;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+
+}
+
+/* Create user */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.NewUser {
+  padding: 2rem;
+}
+
+/* navbar */
+.navbar {
+  height: 10vh;
+}
+
+/* Plantcard Preview */
+.PlantPrev {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin:2rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+/*new plant*/
+.newPlantForm {
+  margin: auto;
+  width: 80vw;
+  height: 63vh;
+  background-color: #CDE77F;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+}
+
+/* ----- Slideshow -------*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: auto;
+  margin: auto;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+.fadeout {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fadeout {
+  from {opacity: 1}
+  to {opacity: .4}
+}
+
+/* ------ End of slideshow css -------- */
