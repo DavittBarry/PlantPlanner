@@ -10,12 +10,12 @@ function Navigation() {
   }
 
     return (
-      <div className="navigation">
-        <nav className="navbar navbar-expand">
-          <div className="container">
-            <NavLink className="navbar-brand" to="/">
+      <div className="navigation ">
+        <nav className="navbar navbar-expand ">
+          <div className="container ">
+            <NavLink className="navbar-brand flex" to="/">
             <img id="navLogo" src={logo} alt="PlantPlannerLogoImg"></img>
-            <img id="navText"src={PlantPlanner} alt="LogoText"></img>
+            <h1 className="my-auto mx-auto">PlantPlanner</h1>
             </NavLink>
             <div>
               <ul className="navbar-nav ml-auto">
@@ -27,12 +27,12 @@ function Navigation() {
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/NewUser">
-                  NewUser
+                  New user
                   </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/NewPlant">
-                  NewPlant
+                  New plant
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -40,8 +40,13 @@ function Navigation() {
                     Plants
                   </NavLink>
                 </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/LocalWeather">
+                    Local weather
+                  </NavLink>
+                </li>
                 <li classname="nav-item">
-                  <button onClick={handleLogout}>Logout</button>
+                  <button type="button" className="btn btn-success" onClick={handleLogout}>Log in</button>
                 </li>
               </ul>
             </div>

@@ -10,6 +10,7 @@ import {
   NewUser,
   NewPlant,
   Plants,
+  LocalWeather,
   Posts,
   Post,
   Login,
@@ -22,14 +23,16 @@ ReactDOM.render(
     <Navigation />
     <Routes>
       {user && <Route path="/" exact element={<Home />} />}
+      <Route path="/Home" exact element={<Home />} />
 			<Route path="/NewUser" exact element={<NewUser />} />
-			<Route path="/login" exact element={<Login />} />
-			<Route path="/" element={<Navigate replace to="/login" />} />
+			<Route path="/Login" exact element={<Login />} />
+			<Route path="/" element={<Navigate replace to="/Home" />} />
       <Route path="/NewPlant" element={<NewPlant />} />
       <Route path="/Plants" element={<Plants />}>
         <Route path="" element={<Posts />} />
         <Route path=":postSlug" element={<Post />} />
       </Route>
+      <Route path="/LocalWeather" element={<LocalWeather />} />
     </Routes>
     <Footer />
   </Router>,

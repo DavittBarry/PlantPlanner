@@ -1,7 +1,11 @@
+html {
+  background-color: #CDE77F;
+}
+
 /* Home Page */
 .home {
-  margin: auto;
-  width: 80%;
+  margin:0px;
+  height: 79vh;
   background-color: #CDE77F;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
 }
@@ -80,7 +84,17 @@ h2{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #F7F7F7;
+  background-color: #CDE77F;
+}
+
+h1.my-auto.mx-auto {
+  color: #CDE77F;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.btn.btn-success {
+  background-color: #79745C;
+  border-color: #79745C;;
 }
 
 .page-header div {
@@ -102,6 +116,7 @@ h2{
 .page-footer h2 {
   /* Remove gap between content div and footer div h2 */
   margin: 0 auto;
+  color: #E6F8B2;
 }
 
 .page-footer ul {
@@ -118,10 +133,21 @@ h2{
 }
 /* Navbar */
 .navbar{
-  background-color: #E6F8B2;
+  background-color: #709176;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
 }
 
+.navbar-expand .navbar-nav .nav-link {
+  color: #373F41;
+}
+
+.btn-success {
+  color: #E6F8B2;
+}
+
+.ml-auto, .mx-auto>h1 {
+ color: #E6F8B2;
+}
 
 /* Login Page */
 .login-page {
@@ -136,7 +162,7 @@ h2{
 .form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #CDE77F;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -145,7 +171,7 @@ h2{
 }
 .form input {
   outline: 0;
-  background: #f2f2f2;
+  background: #CDE77F;
   width: 100%;
   border: 0;
   margin: 0 0 15px;
@@ -179,10 +205,9 @@ h2{
 /* Introduction part in login page */
 
 .introduction {
-  width: 50%;
   padding: 3%;
   margin: auto;
-  background-color: #FFFFFF;
+  background-color: #CDE77F;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
 
 }

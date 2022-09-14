@@ -11,17 +11,17 @@ const MyCollection = [
   {
     label: "Keep track of your plant's needs",
     imgPath:
-"https://ucfdbeec93061b5e830bf4edc846.previews.dropboxusercontent.com/p/thumb/ABgWxZjm3u_dR5ASrC560O9EpKm6zvBLm--1Qm3dG49iEEEdKA99EwagCgoaiqPCQY6DCfqpMj1G503akDt6dRGkcokGcLCi49Cf1B88x3fefvYsemExQOsagLuFWoPxD365363mpeRLIYqLOyOjMIKQn9d5ZdO7unk2v73YRr4JX_NB_Lht4nfGWaoiV-hTZbkgvrJzuDCqTWBYfj_TIeflPkucQQWvProbnhng4-LUJvBuJoBVjEOZXBryY8Nt7Mu_WVEds_rWkMkqjfvbuz59XypkxiurteKA0WaCKD7U908Na1Rgd2jsor97glwZjTb9eHbyJGKtH3UW5MWhRQaVJ-kGgBpJiDsVflbxfxdd01300QTEay7L_1ZnjfHfpZrxiDGFPY2PzTU_MTrIQxh80LKzqZSDZntrsMor7g-XGA/p.jpeg",
+"https://previews.dropbox.com/p/thumb/ABqP2DXpRidGyXt8rP8G9XJpMLwRYd8rIqoWPj0EoSqV-uSnzlftcWgXx_3gwWh7qHXiV0U7eblE_lcO_ys3fXlt5VDf2w4gjn4ldJzgEVk1V1ZdqY6qYTwg8ZK4lCDkdgiGZ95teDjAyuA7jwiL1YhWRSx2-YAQEoXbshHYC1moRWI8h7UKSs01TH--AGreRStzXh28lJ1bsxTJv4-uG0PMMbeGDxHXxdWVphv0Szf9V5KeRKY2RauH6F11X5UH86A4-a6K3d_QYQmVNt5jXWK3I-CK-j_2Z5cs7FnFUBI0a5jzareByP72Wqbs5vkTMvDYF_SJOBLf3MfR1KEcFKGK-ePoWARITPsHf4_TQx-mOlT3B7wPmzaLH4CcUpvkmYs/p.jpeg",
   },
   {
     label: "Never forget to water your plants again",
     imgPath:
-"https://ucddf3e0c64f5f6c535f4453979e.previews.dropboxusercontent.com/p/thumb/ABiNF6sF4VrOVB-zuwwHpYVpn5hGx2a9nVIxZ8TNAd3aa735g94O4KssN0EcaFpeYMDJIXyAv-cdYaGJyt8pf3mBMlY0ZVtnzBVlUylpzAykUnytjEWc59aneGFi2EuBfN6-2CbYY8NAsFVvk3ocTJ4jsNHAjPl5gm-6-HjXDUk2Tny5eO8LXV-hL3xpJhLRO1Q6AXHbss7IjIpC0K5CNz11DgkNBweQ7uqSXCYAIVDIUPYirdwqlyjOzV9edjdEEDfGU1RxNuuEr1wvRedC1md7M_Mwmm_G-8xdwNYSWyDex9gHqeWJt0TYCK2CmAi-cV3bg9cuGH8FKvCfS0oATufxmJAJselGPr3kMLSks4vGQnUG5t0C5mHXOfNGNPXeCC_Y50i1de1bN_RRpbpTjcE-OFcL6g5ey9qogO9bfuo7hw/p.jpeg",
+"https://previews.dropbox.com/p/thumb/ABrPUnjJ2k3uLEPqtjfPhvCYNHN_NHql51O-39n-_-VSSbfJHFWABrkG5f91v72igRIv_RRyhvlgVpGnG5TmPH_yLA6q5cBT8UgqGWG3nokrI-aLC9fVJM5SxVfkGBHRlSN2kYfIC8D793FVYRmtoY2P3DPPzUqAGgopEoJGHa4nLORZJ16WA7Tr3x_-SR5tYqPVmBqnP3LSLt0Z5hfmn2SMcWixQGDOvLKV65FbvQCz0OuBgGB8HR8qC-Op-zZmHvp06_8e1OqjdsjWWIGZ0rhcSMgOm3UcIyPJAwzRpRBEQYBgDqZNbAbgY7hSY9ovEyYaXvKvCXY2sVPtBfioHqeq7Elpckj8fhP7OkBAC_XLNuQC01nW4kYIlL8oXr7fSXY/p.jpeg",
   },
   {
     label: "Make yourself a pro gardener!",
     imgPath:
-"https://ucb80abb049578eaa9b3397cc2d8.previews.dropboxusercontent.com/p/thumb/ABhfiNXnXtsfNxYaWmcOfO8p5khdJIFBiYjXenyzsXbWW2sw4KBRwwkv5wsI9kdGmJrOFzyLfd972-zt8fGoF_Wfh4EXykhEXhiDSavW5NR4Kw5m5urE4wPPOrSflfoFlm0tnURuM1ilqnGe0Yj0xVRgRHpAK5nReHJvi8D1K5ESXlE_jitG3-nLPhlhQ-otmwoIReLWYUt70PL3TdiBTP2IJKFC7cgrBG8-0BfyO_OAQDZ2-44CU-Qxhiin9DdLffTduvVlJEP-Ow0F96u_gv8OdLBv8fKu2mGYMkrfGJ3v7horloxjbz3aqESFV3A-NcOGZpUCmZxiuxTxl3J82ZcnF9gDPAjZAcy-lVTt7y2aEj-ns8p_fS3wAfjn9_EVY-HlosY_0Vl9qOI1Oc9oS8TLLkiqVmyFe6uzunRbKTAY1A/p.jpeg",
+"https://previews.dropbox.com/p/thumb/ABrK68KaU5rqmfIOye2ziQvd_e3quxiFSuQI_zujtXp9rMTOgqf4SK4GvEHAFduSyYf23JeRCHJgGclGtV7WffMAWGlD0pbTojcW4Qj_CY3YgCluDS2OqD7i45VGBJikWVTemwoE_UKzkhveWCgusLumK3tQ5RTM3sCHG_fGWnU3X0wcFx468HoMt_NaKbVLQx__8u9RzMetEMi9wXm47oVYpc9KVTWEWDRa2KfVNxoD6lxIrhfEzjniiUdOz8wpi0j8gKoRNDMFtCUnEyNvF0YwEo6GLezoJcZKIJ6m1tzhxbw3jZkCklNXmewLI4DxK_pTDlnBrkejkqJhdrIsY495oXWtC_33LaiQDuwrsFpnCa44KmzpCpEgUVK7t03WkIE/p.jpeg",
   },
 ];
 
@@ -35,10 +35,11 @@ const CollectionSize = MyCollection.length;
   };
  
   return (
-    <div class="d-flex justify-content-center">
-      <div >
-      <h2>Welcome to PlantPlanner!</h2>
+    <div className="d-flex justify-content-center">
+      <div>
+      <h2>Take care of your plants with one simple app!</h2>
         <Paper
+          className="introduction"
           square
           style={{
             height: 25,
