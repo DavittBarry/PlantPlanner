@@ -35,10 +35,10 @@ function Login() {
   }
 
   return (
-      <div class="home">
+      <div className="home">
           <div className="NewUser">
           
-    <div class="row justify-content-center">
+    <div className="row justify-content-center">
     <form onSubmit={handleSubmit}>
         <h1>Login</h1>
           <input
@@ -64,7 +64,7 @@ function Login() {
       </form>
     </div>
     <br/>
-    <div class="row justify-content-center">
+    <div className="row justify-content-center">
     <h1>New here?</h1>
     <Link to="/NewUser">
       <button type="button">

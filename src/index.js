@@ -15,6 +15,7 @@ import {
   Post,
   Login,
 } from "./components";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const user = localStorage.getItem("token");
 
@@ -23,10 +24,10 @@ ReactDOM.render(
     <Navigation />
     <Routes>
       {user && <Route path="/" exact element={<Home />} />}
-      <Route path="/Home" exact element={<Home />} />
+      <Route path="/PlantPlanner" exact element={<Home />} />
 			<Route path="/NewUser" exact element={<NewUser />} />
 			<Route path="/Login" exact element={<Login />} />
-			<Route path="/" element={<Navigate replace to="/Home" />} />
+			<Route path="/Home" element={<Navigate replace to="/Home" />} />
       <Route path="/NewPlant" element={<NewPlant />} />
       <Route path="/Plants" element={<Plants />}>
         <Route path="" element={<Posts />} />

@@ -1,21 +1,39 @@
 html {
   background-color: #CDE77F;
+  height: auto;
+  width: auto;
 }
 
 /* Home Page */
 .home {
+  position: relative;
   margin:0px;
-  height: 79vh;
+  height: 100vh;
   background-color: #CDE77F;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
 }
 a {
   text-decoration: none;
   color: black;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 a:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.349);
+}
+
+p {
+  color: #373F41;
+}
+
+h1 {
+  color: #373F41
+}
+
+ul {
+  padding-left: 0; 
+  color: #373F41;
+  text-align:center; 
+  list-style-type:none; 
 }
 
 /* Plant cards */
@@ -27,6 +45,7 @@ a:hover {
 }
 .flex {
   display: flex;
+  
 }
 .flex-jc-sb-a-c {
   justify-content: space-between;
@@ -34,6 +53,7 @@ a:hover {
 }
 h2{
     text-align: center;
+    color: #373F41;
 }
 #textField{
   max-width:50%;
@@ -79,6 +99,14 @@ h2{
 #color4{
     background-color: yellow;
 }
+#color5{
+  background-color: #CDE77F;
+}
+
+#color6{
+  color: #709176;
+}
+
 /* Header */
 .page-header {
   display: flex;
@@ -104,7 +132,7 @@ button.btn.btn-success {
 }
 /* Footer */
 .page-footer {
-  position: auto;
+  position: relative;
   height: 160px;
   width: 100%;
   bottom: 0;
@@ -206,6 +234,7 @@ button.btn.btn-success {
 
 .introduction {
   padding: 3%;
+  width: 800px;
   margin: auto;
   background-color: #CDE77F;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
@@ -288,13 +317,27 @@ input[type=submit] {
 
 /* ----- Slideshow -------*/
 
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded  {
+  background-color: #709176;
+  margin: auto;
+}
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
+
+span.MuiButton-label {
+  color: #E6F8B2;
+}
+
+.MuiPaper-root.MuiMobileStepper-root.MuiMobileStepper-positionStatic.MuiPaper-elevation0 {
+  background-color: #E6F8B2;
+}
+
 .slideshow-container {
-  max-width: 800px;
-  position: auto;
+  justify-content: center;
   margin: auto;
+  width: 50vh;
 }
 
 /* On hover, add a black background color with a little bit see-through */
