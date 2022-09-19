@@ -1,25 +1,27 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="footer fixed-bottom">
-      <footer className="page-footer">
-        <div className="LoginContainer">
-          <br/>
-          <p className="m-0 text-center text-white">
-          <h2>Plantplanner</h2>
-    <ul>
-        <a href="https://plantplanner287818493.wordpress.com/">
-        <li>Wordpress</li>
-        </a>
-        <a href="https://github.com/EdvardJ/PlantPlanner">
-        <li>Github</li>
-        </a>
+  <footer className="page-footer footer fixed-bottom site-footer text-center">
+    <div className="LoginContainer">
+      <br/>
+      <NavLink className="navbar-brand flex" to="/PlantPlanner">
+        <h1 className="my-auto mx-auto">PlantPlanner</h1>
+      </NavLink>
+      <br/>
+      <ul class="list-inline">
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/in/davitt-barry-840aa456/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" width="48" height="48" alt="LinkedIn"></img></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://github.com/DavittBarry/PlantPlanner" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968896.png" width="48" height="48" alt="GitHub"></img></a>
+      </li>
+      
     </ul>
-          </p>
-        </div>
-      </footer>
     </div>
+  </footer>
+    
   );
 }
 

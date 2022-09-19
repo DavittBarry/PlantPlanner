@@ -1,14 +1,21 @@
 html {
   background-color: #CDE77F;
-  height: auto;
-  width: auto;
 }
+
+body {
+  padding: 0;
+  margin: 0;
+  }
+  
+  #root {
+  min-height: 100%;
+  }
 
 /* Home Page */
 .home {
   position: relative;
+  height: 120vh;
   margin:0px;
-  height: 100vh;
   background-color: #CDE77F;
 }
 a {
@@ -29,11 +36,24 @@ h1 {
   color: #373F41
 }
 
-ul {
-  padding-left: 0; 
+h2{
+  text-align: center;
   color: #373F41;
-  text-align:center; 
-  list-style-type:none; 
+}
+
+h3 {
+  color: #373F41
+}
+
+h4 {
+  color: #CDE77F;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  color: #373F41;
+  text-align: center; 
+  list-style-type: none; 
 }
 
 /* Plant cards */
@@ -41,7 +61,6 @@ ul {
   background-color: #CDE77F;
   margin: auto;
   width: 50%;
-  padding: 2rem;
 }
 .flex {
   display: flex;
@@ -51,10 +70,7 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-h2{
-    text-align: center;
-    color: #373F41;
-}
+
 #textField{
   max-width:50%;
   display: inline-block;
@@ -76,8 +92,6 @@ h2{
 }
 .indicator{
   border: 1px solid #000;
-  
-  padding: 5px;
   background-color: #E6F8B2;
 }
 .colorInd{
@@ -105,6 +119,40 @@ h2{
 
 #color6{
   color: #709176;
+}
+
+/* Local weather */
+
+.search {
+  background-color: #709176;
+}
+
+.panel {
+  background-color: #CDE77F;
+}
+
+.panel-footer {
+  height: 20vh;
+}
+
+.p-4 {
+  color: #CDE77F;
+}
+
+.btn-pp {
+  color: #709176
+}
+
+.btn-xs {
+  color: #709176
+}
+
+.btn {
+  color: #709176
+}
+
+.row {
+  
 }
 
 /* Header */
@@ -150,12 +198,9 @@ button.btn.btn-success {
 .page-footer ul {
   display: inline-block;
   list-style: none;
-  /* Padding to center list */
-  padding: 5px 0 0 0;
 }
 
 .page-footer li, a {
-  padding: 0 0 5px 0;
   color: black;
   text-decoration: none;
 }
@@ -180,8 +225,6 @@ button.btn.btn-success {
 /* Login Page */
 .login-page {
   width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
 }
 .login-page .form .login{
   margin-top: -31px;
@@ -192,8 +235,6 @@ button.btn.btn-success {
   z-index: 1;
   background: #CDE77F;
   max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -202,8 +243,6 @@ button.btn.btn-success {
   background: #CDE77F;
   width: 100%;
   border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
 }
@@ -214,7 +253,6 @@ button.btn.btn-success {
   background-image: linear-gradient(45deg,#709176,#CDE77F);
   width: 100%;
   border: 0;
-  padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
@@ -222,7 +260,6 @@ button.btn.btn-success {
   cursor: pointer;
 }
 .form .message {
-  margin: 15px 0 0;
   color: #b3b3b3;
   font-size: 12px;
 }
@@ -235,21 +272,19 @@ button.btn.btn-success {
 .introduction {
   padding: 3%;
   width: 800px;
-  margin: auto;
-  background-color: #CDE77F;
+  height: 600px;
+  background-color: #E6F8B2;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
 
 }
 
 /* Create user */
 label {
-  padding: 12px 12px 12px 0;
   display: inline-block;
 }
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
-  padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -260,14 +295,12 @@ input[type=submit] {
 .col-25 {
   float: left;
   width: 25%;
-  margin-top: 6px;
 }
 
 /* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
   width: 75%;
-  margin-top: 6px;
 }
 
 /* Clear floats after the columns */
@@ -319,7 +352,6 @@ input[type=submit] {
 
 .MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded  {
   background-color: #709176;
-  margin: auto;
 }
 
 * {box-sizing:border-box}
@@ -331,13 +363,14 @@ span.MuiButton-label {
 }
 
 .MuiPaper-root.MuiMobileStepper-root.MuiMobileStepper-positionStatic.MuiPaper-elevation0 {
-  background-color: #E6F8B2;
+  background-color: #CDE77F;
 }
+
 
 .slideshow-container {
   justify-content: center;
   margin: auto;
-  width: 50vh;
+  width: 600px;
 }
 
 /* On hover, add a black background color with a little bit see-through */

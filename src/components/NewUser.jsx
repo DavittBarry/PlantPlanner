@@ -2,8 +2,6 @@ import { useState} from "react";
 import {Link, useNavigate} from 'react-router-dom'
 import axios from 'axios'
 
-
-
 function NewUser() {
   const[data, setData] = useState({
     firstName: "",
@@ -36,7 +34,7 @@ function NewUser() {
   }
 
   return (
-      <div class="home">
+      <div class="home text-center">
           <div className="NewUser">
 
           

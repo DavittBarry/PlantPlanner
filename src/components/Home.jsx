@@ -10,21 +10,20 @@ function Home() {
     <br/>
     <h1>Introduction:</h1>
     <br/>
-    <p>We are 3 full-stack web developer students from Taitotalo, Helsinki.</p>
     <p>The goal of this project is to improve and experiment with various website developement technologies.</p>
-    <p>Check out our dev blog here:</p>
-    
-    <a href="https://plantplanner287818493.wordpress.com/"> Plantplanner Dev Blog</a>
+    <p>PlantPlanner will help users solve the mystery of plant care!</p>
     <br/>
     <br/>
     <h2>Technologies:</h2>
     <br/>
-    <ul>HTML 5</ul>
-    <ul>CSS 3</ul>
-    <ul>PHP</ul>
-    <ul>JavaScript (React)</ul>
-    <ul>MongoDB</ul>
-    <ul>Bootstrap</ul>
+    <ul className="list-inline justify-content-center">
+      <li>HTML 5</li>
+      <li>CSS 3</li>
+      <li>PHP</li>
+      <li>JavaScript (React)</li>
+      <li>MongoDB</li>
+      <li>Bootstrap</li>
+    </ul>
   </div>
 </div> //Wrapper
 );

@@ -1,10 +1,11 @@
 import React from "react";
+import App from "../App.js";
 
 function LocalWeather() {
   return (
-<div className="text-center">
-    <p>test</p>
-</div> 
+<span>
+  <App />
+</span> 
 );
 }
 

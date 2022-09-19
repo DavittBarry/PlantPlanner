@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 function Plants() {
   return (
-    <div className="home">
+    <div className="home p-3">
       <div class="container">
         <h1 className="text-center mt-5">Your plants:</h1>
         <Outlet />
