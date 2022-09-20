@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 import logo from '../static_files/Logo.png'
 function Navigation() {
 
-  const handleLogout = () => {
+  /*const handleLogout = () => {
     localStorage.removeItem("token");
     window.location.reload()
-  }
+  }*/
 
     return (
       <div className="navigation ">
@@ -48,8 +48,7 @@ function Navigation() {
                   
                             <NavLink className="p-4" to="/Login">
                             <button type="button" 
-                          className="btn btn-success" 
-                          onClick={handleLogout}>
+                          className="btn btn-success">
                     Log In
                     </button>
                   </NavLink>
