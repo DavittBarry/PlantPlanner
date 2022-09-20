@@ -45,13 +45,15 @@ function Navigation() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <button type="button" 
+                  
+                            <NavLink className="p-4" to="/Login">
+                            <button type="button" 
                           className="btn btn-success" 
                           onClick={handleLogout}>
-                            <NavLink className="p-4" to="/Login">
                     Log In
+                    </button>
                   </NavLink>
-                  </button>
+                  
                 </li>
               </ul>
             </div>
