@@ -35,12 +35,12 @@ function Login() {
   }
 
   return (
-      <div className="home">
+      <div className="introduction slideshow-container my-auto mx-auto text-center">
           <div className="NewUser">
           
-    <div className="row justify-content-center">
+    <div className="row">
     <form onSubmit={handleSubmit}>
-        <h1>Login</h1>
+        <h1>Log In</h1>
           <input
           type="email"
           placeholder="Email"

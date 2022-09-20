@@ -17,7 +17,7 @@ function Navigation() {
             <h1 className="my-auto mx-auto">PlantPlanner</h1>
             </NavLink>
             <div>
-              <ul className="navbar-nav ml-auto">
+              <ul className="navbar-nav ml-auto ">
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/PlantPlanner">
                     Home
@@ -48,7 +48,9 @@ function Navigation() {
                   <button type="button" 
                           className="btn btn-success" 
                           onClick={handleLogout}>
-                            Log in
+                            <NavLink className="p-4" to="/Login">
+                    Log In
+                  </NavLink>
                   </button>
                 </li>
               </ul>
