@@ -5,6 +5,8 @@ Simple web service created with **React**
 
 This is a forked project continued from the previous version of PlantPlanner (contributers can be found here: https://github.com/EdvardJ/PlantPlanner). Application is intended to help users put their plants on a database that reminds them to water the plants at the right time, gives them info about the plant and also displays local and foreign weather.
 
+Live GitHub Pages site: https://davittbarry.github.io/PlantPlanner
+
 ## Technologies
 
 MERN-stack
