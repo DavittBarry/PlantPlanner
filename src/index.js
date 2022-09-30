@@ -21,7 +21,7 @@ const user = localStorage.getItem("token");
 
 ReactDOM.render(
   <Router>
-    <Navigation />
+    <Navigation id="signIn"/>
     <Routes>
       {user && <Route path="/" exact element={<Home />} />}
       <Route path="/PlantPlanner" exact element={<Home />} />

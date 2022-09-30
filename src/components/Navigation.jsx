@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from '../static_files/Logo.png'
 function Navigation() {
@@ -7,6 +8,23 @@ function Navigation() {
     localStorage.removeItem("token");
     window.location.reload()
   }*/
+
+  function handleCallbackResponse(response){
+    console.log("Encoded JWT ID token: " + response.credential);
+  }
+
+  useEffect(() => {
+    /* global google */
+    google.accounts.id.initialize({
+      client_id: "650092870688-ceu9papi8p7bufl6e848ijihvlaukc9s.apps.googleusercontent.com",
+      callback: handleCallbackResponse,
+    });
+
+    google.accounts.id.renderButton(
+      document.getElementById("signInDiv"),
+      { theme: "outline", size: "large" }
+    );
+  }, [])
 
     return (
       <div className="navigation ">
@@ -45,15 +63,14 @@ function Navigation() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  
                             <NavLink className="p-4" to="/Login">
                             <button type="button" 
                           className="btn btn-success">
                     Log In
                     </button>
                   </NavLink>
-                  
                 </li>
+                <div id="signInDiv"></div>
               </ul>
             </div>
           </div>
