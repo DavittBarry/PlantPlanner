@@ -8,28 +8,42 @@ import {
   Footer,
   Home,
   NewUser,
-  NewPlant,
+  NewPlantlogin,
+  NewPlantlogout,
+  Accountcreation,
+  LocalWeather,
   Plants,
+  Plantslogout,
   Posts,
   Post,
   Login,
 } from "./components";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const user = localStorage.getItem("token");
 
 ReactDOM.render(
   <Router>
-    <Navigation />
+    <Navigation id="signIn"/>
     <Routes>
       {user && <Route path="/" exact element={<Home />} />}
+      {user && <Route path="/NewPlant" exact element={<NewPlantlogin />} />}
+      {user && <Route path="/Plants" element={<Plants />}>
+        <Route path="" element={<Posts />} />
+        <Route path=":postSlug" element={<Post />} />
+      </Route>}
+      <Route path="/" exact element={<Login />} />
+      <Route path="/Accountcreation" exact element={<Accountcreation />} />
+      <Route path="/PlantPlanner" exact element={<Home />} />
 			<Route path="/NewUser" exact element={<NewUser />} />
-			<Route path="/login" exact element={<Login />} />
-			<Route path="/" element={<Navigate replace to="/login" />} />
-      <Route path="/NewPlant" element={<NewPlant />} />
-      <Route path="/Plants" element={<Plants />}>
+			<Route path="/Login" exact element={<Login />} />
+			<Route path="/Home" element={<Navigate replace to="/Home" />} />
+      <Route path="/NewPlant" element={<NewPlantlogout />} />
+      <Route path="/Plants" element={<Plantslogout />}>
         <Route path="" element={<Posts />} />
         <Route path=":postSlug" element={<Post />} />
       </Route>
+      <Route path="/LocalWeather" element={<LocalWeather />} />
     </Routes>
     <Footer />
   </Router>,

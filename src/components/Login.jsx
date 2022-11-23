@@ -35,13 +35,15 @@ function Login() {
   }
 
   return (
-      <div class="home">
+      <div className="introduction slideshow-container my-auto mx-auto text-center">
           <div className="NewUser">
           
-    <div class="row justify-content-center">
+    <div className="row">
     <form onSubmit={handleSubmit}>
-        <h1>Login</h1>
+        <h1>Log In</h1>
+        <br/>
           <input
+          className="p-3"
           type="email"
           placeholder="Email"
           name='email'
@@ -50,7 +52,9 @@ function Login() {
           required
           />
           <br/>
+          <br/>
           <input
+          className="p-3"
           type="password"
           placeholder="Password"
           name='password'
@@ -59,16 +63,25 @@ function Login() {
           required
           />
           <br/>
+          <br/>
           {error && <div>{error}</div>}
-          <button type="submit">Sign In</button>
+          <button className="p-2 btn btn-success" type="submit">
+            <h6>
+            Sign In
+            </h6>
+            </button>
       </form>
     </div>
     <br/>
-    <div class="row justify-content-center">
+    <div className="row justify-content-center">
     <h1>New here?</h1>
+    <br/>
     <Link to="/NewUser">
-      <button type="button">
+      <br/>
+      <button className="p-2 btn btn-success" type="button">
+        <h6>
         Sign Up
+        </h6>
       </button>
     </Link>
     </div>

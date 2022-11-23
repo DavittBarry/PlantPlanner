@@ -1,17 +1,71 @@
+html {
+  background-color: #CDE77F;
+}
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+  }
+  
+  #root {
+  min-height: 100%;
+  background-color: #CDE77F;
+  }
+
 /* Home Page */
 .home {
-  margin: auto;
-  width: 80%;
+  position: relative;
+  height: 1vh;
+  margin:0px;
   background-color: #CDE77F;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
 }
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 a:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.349);
+}
+
+p {
+  color: #373F41;
+}
+
+h1 {
+  color: #373F41
+}
+
+h2{
+  text-align: center;
+  color: #373F41;
+}
+
+h3 {
+  color: #373F41
+}
+
+h4 {
+  color: #CDE77F;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+h5 {
+  color: #CDE77F;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+h6 {
+  color: #cde77f;
+}
+
+ul {
+  color: #373F41;
+  text-align: center; 
+  list-style-type: none; 
 }
 
 /* Plant cards */
@@ -19,18 +73,16 @@ a:hover {
   background-color: #CDE77F;
   margin: auto;
   width: 50%;
-  padding: 2rem;
 }
 .flex {
   display: flex;
+  
 }
 .flex-jc-sb-a-c {
   justify-content: space-between;
   align-items: center;
 }
-h2{
-    text-align: center;
-}
+
 #textField{
   max-width:50%;
   display: inline-block;
@@ -52,8 +104,6 @@ h2{
 }
 .indicator{
   border: 1px solid #000;
-  
-  padding: 5px;
   background-color: #E6F8B2;
 }
 .colorInd{
@@ -75,12 +125,64 @@ h2{
 #color4{
     background-color: yellow;
 }
+#color5{
+  background-color: #CDE77F;
+}
+
+#color6{
+  color: #709176;
+}
+
+/* Local weather */
+
+.search {
+  background-color: #709176;
+}
+
+.panel {
+  background-color: #CDE77F;
+}
+
+.panel-footer {
+  height: 20vh;
+}
+
+.p-4 {
+  color: #CDE77F;
+}
+
+.btn-pp {
+  color: #709176
+}
+
+.btn-xs {
+  color: #709176
+}
+
+.btn {
+  color: #709176
+}
+
+.row {
+  
+}
+
 /* Header */
 .page-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #F7F7F7;
+  background-color: #CDE77F;
+}
+
+h1.my-auto.mx-auto {
+  color: #CDE77F;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.btn.btn-success {
+  background-color: #79745C;
+  border-color: #79745C;;
 }
 
 .page-header div {
@@ -90,7 +192,7 @@ h2{
 }
 /* Footer */
 .page-footer {
-  position: auto;
+  position: relative;
   height: 160px;
   width: 100%;
   bottom: 0;
@@ -102,32 +204,39 @@ h2{
 .page-footer h2 {
   /* Remove gap between content div and footer div h2 */
   margin: 0 auto;
+  color: #E6F8B2;
 }
 
 .page-footer ul {
   display: inline-block;
   list-style: none;
-  /* Padding to center list */
-  padding: 5px 0 0 0;
 }
 
 .page-footer li, a {
-  padding: 0 0 5px 0;
   color: black;
   text-decoration: none;
 }
 /* Navbar */
 .navbar{
-  background-color: #E6F8B2;
+  background-color: #709176;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
 }
 
+.navbar-expand .navbar-nav .nav-link {
+  color: #373F41;
+}
+
+.btn-success {
+  color: #E6F8B2;
+}
+
+.ml-auto, .mx-auto>h1 {
+ color: #E6F8B2;
+}
 
 /* Login Page */
 .login-page {
   width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
 }
 .login-page .form .login{
   margin-top: -31px;
@@ -136,20 +245,16 @@ h2{
 .form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #CDE77F;
   max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form input {
   outline: 0;
-  background: #f2f2f2;
+  background: #CDE77F;
   width: 100%;
   border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
 }
@@ -160,7 +265,6 @@ h2{
   background-image: linear-gradient(45deg,#709176,#CDE77F);
   width: 100%;
   border: 0;
-  padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
@@ -168,7 +272,6 @@ h2{
   cursor: pointer;
 }
 .form .message {
-  margin: 15px 0 0;
   color: #b3b3b3;
   font-size: 12px;
 }
@@ -179,23 +282,21 @@ h2{
 /* Introduction part in login page */
 
 .introduction {
-  width: 50%;
   padding: 3%;
-  margin: auto;
-  background-color: #FFFFFF;
+  width: 800px;
+  height: 600px;
+  background-color: #E6F8B2;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
 
 }
 
 /* Create user */
 label {
-  padding: 12px 12px 12px 0;
   display: inline-block;
 }
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
-  padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -206,14 +307,12 @@ input[type=submit] {
 .col-25 {
   float: left;
   width: 25%;
-  margin-top: 6px;
 }
 
 /* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
   width: 75%;
-  margin-top: 6px;
 }
 
 /* Clear floats after the columns */
@@ -263,13 +362,27 @@ input[type=submit] {
 
 /* ----- Slideshow -------*/
 
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded  {
+  background-color: #709176;
+}
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
+
+span.MuiButton-label {
+  color: #E6F8B2;
+}
+
+.MuiPaper-root.MuiMobileStepper-root.MuiMobileStepper-positionStatic.MuiPaper-elevation0 {
+  background-color: #CDE77F;
+}
+
+
 .slideshow-container {
-  max-width: 800px;
-  position: auto;
+  justify-content: center;
   margin: auto;
+  width: 600px;
 }
 
 /* On hover, add a black background color with a little bit see-through */

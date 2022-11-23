@@ -2,8 +2,6 @@ import { useState} from "react";
 import {Link, useNavigate} from 'react-router-dom'
 import axios from 'axios'
 
-
-
 function NewUser() {
   const[data, setData] = useState({
     firstName: "",
@@ -23,7 +21,7 @@ function NewUser() {
     try{
       const url ="http://localhost:8080/api/users";
       const {data: res} = await axios.post(url,data);
-      navigate("/login")
+      navigate("/Accountcreation")
       console.log(res.message)
     }catch(error){
       if(error.response &&
@@ -36,22 +34,27 @@ function NewUser() {
   }
 
   return (
-      <div class="home">
-          <div className="NewUser">
+      <div class="introduction slideshow-container text-center">
+          <div className="container">
 
           
     <div class="row justify-content-center">
+      <h3>If you have an account, please sign in:</h3>
     <Link to="/login">
-      <button type="button">
+      
+      <button className="p-2 btn btn-success" type="button">
+        <h6>
         Sign in
+        </h6>
       </button>
     </Link>
     </div>
     
-    <div class="row justify-content-center">
+    <div class="row justify-content-center p-2">
       <form onSubmit={handleSubmit}>
-        <h1>Create Account</h1>
+        <h3>Otherwise, create an account here:</h3>
         <input
+          className="p-2"
           type="text"
           placeholder="First Name"
           name='firstName'
@@ -60,7 +63,9 @@ function NewUser() {
           required
           />
           <br/>
+          <br/>
           <input
+          className="p-2"
           type="text"
           placeholder="Last Name"
           name='lastName'
@@ -69,7 +74,9 @@ function NewUser() {
           required
           />
           <br/>
+          <br/>
           <input
+          className="p-2"
           type="email"
           placeholder="Email"
           name='email'
@@ -78,7 +85,9 @@ function NewUser() {
           required
           />
           <br/>
+          <br/>
           <input
+          className="p-2"
           type="password"
           placeholder="Password"
           name='password'
@@ -88,7 +97,9 @@ function NewUser() {
           />
           <br/>
           {error && <div>{error}</div>}
-          <button type="submit">Sign Up</button>
+          <br/>
+          <button className="p-2 btn btn-success" type="submit">
+            <h6>Sign Up</h6></button>
       </form>
     </div>
 
