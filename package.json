@@ -2,6 +2,7 @@
   "name": "plantplanner",
   "version": "0.1.0",
   "homepage": "https://davittbarry.github.io/PlantPlanner/",
+  "proxy": "http://localhost:8080",
   "private": false,
   "dependencies": {
     "@material-ui/core": "^4.12.4",
@@ -52,4 +53,5 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }
+  
 }

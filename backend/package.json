@@ -2,6 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "homepage": "https://davittbarry.github.io/PlantPlanner/",
+  "proxy": "http://localhost:8080",
   "description": "",
   "main": "index.js",
   "scripts": {
