@@ -19,7 +19,7 @@ function NewUser() {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try{
-      const url ="http://localhost:8080/api/users";
+      const url ="https://localhost:8080/api/users";
       const {data: res} = await axios.post(url,data);
       navigate("/Accountcreation")
       console.log(res.message)
