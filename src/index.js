@@ -13,6 +13,8 @@ import {
   Accountcreation,
   LocalWeather,
   Plants,
+  Terms,
+  Cookies,
   Plantslogout,
   Posts,
   Post,
@@ -39,6 +41,8 @@ ReactDOM.render(
 			<Route path="/Login" exact element={<Login />} />
 			<Route path="/Home" element={<Navigate replace to="/Home" />} />
       <Route path="/NewPlant" element={<NewPlantlogout />} />
+      <Route path="/Cookies" element={<Cookies />} />
+      <Route path="/Terms" element={<Terms />} /> 
       <Route path="/Plants" element={<Plantslogout />}>
         <Route path="" element={<Posts />} />
         <Route path=":postSlug" element={<Post />} />

@@ -8,6 +8,8 @@ export { default as Plants } from "./Plants/Plants";
 export { default as Accountcreation } from "./Accountcreation";
 export { default as Plantslogout } from "./Plants/Plantslogout";
 export { default as Posts } from "./Plants/Posts";
+export { default as Cookies } from "./Cookies";
+export { default as Terms } from "./Terms";
 export { default as Post } from "./Plants/Post";
 export { default as Login } from "./Login";
 export { default as LocalWeather } from "./LocalWeather";

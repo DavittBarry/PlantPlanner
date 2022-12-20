@@ -9,12 +9,11 @@ function Home() {
     <Slideshow />
     <br/>
     <h1>Introduction:</h1>
-    <br/>
     <p>The goal of this project is to improve and experiment with various website developement technologies.</p>
     <p>PlantPlanner will help users solve the mystery of plant care!</p>
     <br/>
     <br/>
-    <h2>Technologies:</h2>
+    <h2></h2>
     <br/>
     <ul className="list-inline justify-content-center">
       <li>HTML 5</li>
