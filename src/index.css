@@ -207,6 +207,13 @@ button.btn.btn-success {
   color: #E6F8B2;
 }
 
+.card-body {
+  background-color: #E6F8B2;
+}
+.card {
+  background-color: #E6F8B2;
+}
+
 .page-footer ul {
   display: inline-block;
   list-style: none;
