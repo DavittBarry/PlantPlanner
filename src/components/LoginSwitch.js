@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const handleLogout = () => {
     localStorage.removeItem("token");
-    window.location.assign("/");
+    window.location.assign("/PlantPlanner");
 }
 
 const token = localStorage.getItem("token");
