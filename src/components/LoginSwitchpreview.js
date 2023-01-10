@@ -18,7 +18,7 @@ const LoginSwitchpreview = () => {
         return (
             <li className="nav-item">
                         
-                            <NavLink className="p-4" to="/">
+                            <NavLink className="p-4" to="/PlantPlanner">
                             <button onClick={handleLogout} type="button" 
                             className="btn btn">
                     <h6>
@@ -32,7 +32,7 @@ const LoginSwitchpreview = () => {
         else return (
         <li className="nav-item">
                         
-                            <NavLink className="p-4" to="/">
+                            <NavLink className="p-4" to="/PlantPlanner">
                             <button onClick={handleLogin} type="button" 
                             className="btn btn">
                     <h6>
