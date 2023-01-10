@@ -3,7 +3,6 @@ html {
 }
 
 
-
 body {
   padding: 0;
   margin: 0;
@@ -200,6 +199,8 @@ button.btn.btn-success {
   background-color: #709176;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
 }
+
+
 
 .page-footer h2 {
   /* Remove gap between content div and footer div h2 */

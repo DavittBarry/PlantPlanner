@@ -18,7 +18,7 @@ const NewPlant = () => {
   return (
     <div className=" NewPlant slideshow-container" style={{ backgroundColor: '#E6F8B2' }}>
       {previewVisible && (
-        <div className="card container" style={{ backgroundColor: '#E6F8B2' }}>
+        <div className="col card container" style={{ backgroundColor: '#E6F8B2' }}>
           <h3 className="card-body">Preview:</h3>
           <div className="row card-body">
             <h3 className="card-title"><b>Plant name: </b>"{plantName}"</h3>

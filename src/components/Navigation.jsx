@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from '../static_files/Logo.png';
 import LoginSwitch from './LoginSwitch';
+import LoginSwitchpreview from './LoginSwitchpreview';
 function Navigation() {
 
   const handleLogout = () => {
@@ -60,6 +61,7 @@ function Navigation() {
                 
                 <div id="signInDiv"></div>
                 <LoginSwitch />
+                <LoginSwitchpreview />
               </ul>
             </div>
           </div>
