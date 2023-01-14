@@ -16,7 +16,7 @@ const NewPlant = () => {
   }
 
   return (
-    <div className=" NewPlant slideshow-container" style={{ backgroundColor: '#E6F8B2' }}>
+    <div className="NewPlant slideshow-container p-6" style={{ backgroundColor: '#E6F8B2' }}>
       {previewVisible && (
         <div className="col card container" style={{ backgroundColor: '#E6F8B2' }}>
           <h3 className="card-body">Preview:</h3>
@@ -43,25 +43,25 @@ const NewPlant = () => {
           <div className="form-group">
             <label for="wateringCycle">Watering cycle:</label>
             <select className="form-control" id="wateringCycle" name="wateringCycle" onChange={(e) => setWateringCycle(e.target.value)}>
-                <option value="week">Once a week</option>
-<option value="2week">Every two weeks</option>
-<option value="month">Once a month</option>
-</select>
-</div>
-<div className="form-group form-check">
-  <input type="checkbox" className="form-check-input" id="watered" onChange={(e) => setWatered(e.target.checked)} />
-  <label className="form-check-label" for="watered">Plant has been watered:</label>
-  <span id="js-initiation-time"></span>
-</div>
-<div className="form-group">
-  <label for="image">Image:</label>
-  <input type="file" className="form-control" id="image" name="image" onChange={(e) => setImage(e.target.files[0])} />
-</div>
-<button type="submit" className="btn btn-success">Submit</button>
-</div>
-</form>
-</div>
-);
+              <option value="week">Once a week</option>
+              <option value="2week">Every two weeks</option>
+              <option value="month">Once a month</option>
+            </select>
+          </div>
+          <div className="form-group form-check">
+            <input type="checkbox" className="form-check-input" id="watered" onChange={(e) => setWatered(e.target.checked)} />
+            <label className="form-check-label" for="watered">Plant has been watered:</label>
+            <span id="js-initiation-time"></span>
+          </div>
+          <div className="form-group">
+            <label for="image">Image:</label>
+            <input type="file" className="form-control" id="image" name="image" onChange={(e) => setImage(e.target.files[0])} />
+          </div>
+          <button type="submit" className="btn btn-success">Submit</button>
+        </div>
+      </form>
+    </div>
+  );
 }
 
 export default NewPlant;

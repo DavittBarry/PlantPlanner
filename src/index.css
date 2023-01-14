@@ -1,24 +1,23 @@
-html {
+html, body {
   background-color: #CDE77F;
+  height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-
-body {
-  padding: 0;
-  margin: 0;
-  }
-  
-  #root {
-  min-height: 100%;
+#root {
   background-color: #CDE77F;
+  min-height: 100%;
   }
 
 /* Home Page */
 .home {
   position: relative;
-  height: 100vh;
-  margin:0px;
+  margin: 0px;
+  height: calc(100vh - 80px); /* 80px is the height of the footer */
   background-color: #CDE77F;
+  overflow: scroll;
 }
 a {
   text-decoration: none;
@@ -70,8 +69,10 @@ ul {
 /* Plant cards */
 .PlantCard, .slider, .landing-page{
   background-color: #CDE77F;
-  margin: auto;
-  width: 50%;
+  margin: 0;
+  height: 100%;
+
+  width: 100%;
 }
 .flex {
   display: flex;
@@ -99,7 +100,6 @@ ul {
     grid-template-rows: auto auto;
     grid-gap: 10px;
     grid-auto-flow: column;
-    height: 150px;
 }
 .indicator{
   border: 1px solid #000;
@@ -138,6 +138,13 @@ ul {
   background-color: #709176;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+}
+
 .panel {
   background-color: #CDE77F;
 }
@@ -162,9 +169,6 @@ ul {
   color: #709176
 }
 
-.row {
-  
-}
 
 /* Header */
 .page-header {
@@ -191,15 +195,19 @@ button.btn.btn-success {
 }
 /* Footer */
 .page-footer {
-  position: relative;
-  height: 190px;
+  position: fixed;
+  height: 150px;
   width: 100%;
+  margin: 0;
   bottom: 0;
   text-align: center;
   background-color: #709176;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
 }
 
+.site-footer {
+  overflow: hidden;
+}
 
 
 .page-footer h2 {
@@ -292,7 +300,7 @@ button.btn.btn-success {
 .introduction {
   padding: 3%;
   width: 800px;
-  height: 600px;
+  height: 100%;
   background-color: #E6F8B2;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
 
@@ -362,8 +370,8 @@ input[type=submit] {
 /*new plant*/
 .newPlantForm {
   margin: auto;
-  width: 80vw;
-  height: 63vh;
+  width: auto;
+  height: auto;
   background-color: #CDE77F;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
 }
@@ -390,7 +398,9 @@ span.MuiButton-label {
 .slideshow-container {
   justify-content: center;
   margin: auto;
-  width: 600px;
+  height: auto;
+  
+  width: 1000px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
