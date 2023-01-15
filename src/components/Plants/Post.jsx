@@ -1,41 +1,48 @@
-import React, { useEffect } from "react";
-import { useParams } from "react-router";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import './Post.css';
 
-function Post() {
-  let { postSlug } = useParams();
+const Post = () => {
+  const { postSlug } = useParams();
+  const [wateringValue, setWateringValue] = useState(0);
+  const [fertilizingValue, setFertilizingValue] = useState(0);
 
   useEffect(() => {
     // Fetch post using the postSlug
   }, [postSlug]);
 
   return (
-    <div style={{ overflow: 'hidden' }}>
-      <div class="container" >
-        <div class="slider">
-          <div id="imgDiv">
-            <img src='https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt="plantImg" style={{ width: '200px', height: '200px' }}></img>
-            <h2>Rose</h2>
-          </div> {/* ./imgDiv */}
-          <span>Kastelutiheys</span>
-          <input type="range" min="1" max="100" />
-          <span>Lannoitus</span>
-          <input type="range" min="1" max="100" />
-        </div> {/* ./slider */}
-        <div class="PlantCard">
-          <div id="imgDiv">
-            <img src='https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt="plantImg" style={{ width: '200px', height: '200px' }}></img>
-            <h2>Kasvin nimi</h2>
-          </div> {/* ./imgDiv */}
-          <div id="textField">
-            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </div> {/* ./textField */}
-          <div id="indicatorCont">
-            <div class="indicator flex flex-jc-sb-a-c"><span>Kasteltu viimeksi:</span><span>17.3.2022</span><div class="colorInd" id="color1"></div></div>
-            <div class="indicator flex flex-jc-sb-a-c"><span>Lannoitettu viimeksi:</span><span>1.3.2021</span><div class="colorInd" id="color2"></div></div>
-            <div class="indicator flex flex-jc-sb-a-c">Jotain ja jotain:<div class="colorInd" id="color3"></div></div>
-            <div class="indicator flex flex-jc-sb-a-c">Jotain ja jotain:<div class="colorInd" id="color4"></div></div>
-          </div> {/* ./indicatorCont */}
-        </div> {/* ./PlantCard */}
+    <div className="post-container rounded" >
+      <div className="plant-card watering-card rounded" style={{ backgroundColor: "#70917" }}>
+        <div className="info-card " >
+          <h2>Rose</h2>
+          <div className="info-card-text p-1">
+            <p>The rose is a type of flowering shrub. Its name comes from the Latin word Rosa. There are over three hundred species and tens of thousands of cultivars. The flowers of the rose grow in many different colors, from the well-known red rose or yellow rose and sometimes white or purple rose.</p>
+          </div>
+        </div>
+        <img src='https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt="plantImg" className="plant-img" />
+        <div className="plant-info">
+          <div className="watering-card" style={{ paddingTop: "20px", backgroundColor: "#70917" }}>
+            <h3>Watering</h3>
+            <div className="watering-slider">
+              <input type="range" min="1" max="5" value={wateringValue} onChange={(e) => setWateringValue(e.target.value)} />
+            </div>
+            <div className="watering-status">
+              <p>Current watering level: {wateringValue}</p>
+              <p>Last watered: 17.3.2022</p>
+            </div>
+          </div>
+          <div className="fertilizing-card" style={{ paddingTop: "20px", backgroundColor: "#70917" }}>
+            <h3>Fertilizing</h3>
+            <div className="fertilizing-slider">
+              <input type="range" min="1" max="5" value={fertilizingValue} onChange={(e) => setFertilizingValue(e.target.value)} />
+            </div>
+            <div className="fertilizing-status">
+              <p>Current fertilizing level: {fertilizingValue}</p>
+              <p>Last fertilized: 1.3.2021</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

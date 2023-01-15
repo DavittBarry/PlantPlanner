@@ -132,11 +132,14 @@ ul {
   color: #709176;
 }
 
+
+
 /* Local weather */
 
 .search {
   background-color: #709176;
 }
+
 
 .footer {
   position: fixed;
@@ -430,3 +433,17 @@ span.MuiButton-label {
 }
 
 /* ------ End of slideshow css -------- */
+
+.navbar-menu {
+  display: none;
+}
+
+.navbar-burger {
+  display: flex;
+  cursor: pointer;
+}
+
+
+.navbar-burger:hover .navbar-menu {
+  display: flex;
+}
