@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/PlantPlanner/static/css/main.f39dc997.css",
-    "main.js": "/PlantPlanner/static/js/main.850d8a9b.js",
+    "main.css": "/PlantPlanner/static/css/main.063e7ced.css",
+    "main.js": "/PlantPlanner/static/js/main.e8d6caea.js",
     "index.html": "/PlantPlanner/index.html",
-    "main.f39dc997.css.map": "/PlantPlanner/static/css/main.f39dc997.css.map",
-    "main.850d8a9b.js.map": "/PlantPlanner/static/js/main.850d8a9b.js.map"
+    "main.063e7ced.css.map": "/PlantPlanner/static/css/main.063e7ced.css.map",
+    "main.e8d6caea.js.map": "/PlantPlanner/static/js/main.e8d6caea.js.map"
   },
   "entrypoints": [
-    "static/css/main.f39dc997.css",
-    "static/js/main.850d8a9b.js"
+    "static/css/main.063e7ced.css",
+    "static/js/main.e8d6caea.js"
   ]
 }
