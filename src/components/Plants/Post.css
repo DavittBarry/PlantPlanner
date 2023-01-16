@@ -1,8 +1,15 @@
 .plant-card {
+width: auto;
 display: flex;
 flex-direction: column;
 align-items: center;
 background-color: #709176;
+outline: none; /* remove border */
+}
+
+
+.card-spacing {
+  margin: 10px;
 }
 
 .plant-img {
@@ -13,9 +20,12 @@ height: 200px;
 .plant-info {
 display: flex;
 flex-wrap: wrap;
+
 margin-top: 20px;
 background-color: #709176;
 }
+
+
 
 .watering-slider, .fertilizing-slider {
 flex-basis: 50%;
@@ -45,4 +55,21 @@ background-color: #709176;
 .status-item {
 flex-basis: 48%;
 background-color: #709176;
+}
+
+.posts {
+    background-color: #709176;
+}
+
+.PlantPrev {
+    background-color: #CDE77F;
+    margin: 10px; /* add margin to create space between boxes */
+}
+
+h1 {
+   color: #373F41;
+}
+
+p {
+    color: #373F41;
 }

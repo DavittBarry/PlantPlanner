@@ -83,6 +83,10 @@ ul {
   align-items: center;
 }
 
+.plant-card {
+    background-color: #709176;
+}
+
 #textField{
   max-width:50%;
   display: inline-block;
