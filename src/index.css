@@ -225,8 +225,11 @@ button.btn.btn-success {
 
 .card-body {
   background-color: #E6F8B2;
+
 }
 .card {
+  
+  width: 500px;
   background-color: #E6F8B2;
 }
 
@@ -355,6 +358,8 @@ input[type=submit] {
 
 .NewUser {
   padding: 2rem;
+  width: 500px;
+  height: 100vh;
 }
 
 /* navbar */

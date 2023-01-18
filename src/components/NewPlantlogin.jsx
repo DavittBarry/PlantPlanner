@@ -16,20 +16,22 @@ const NewPlant = () => {
   }
 
   return (
-    <div className="NewPlant slideshow-container p-6" style={{ backgroundColor: '#E6F8B2' }}>
+    <div className="slideshow-container p-3" style={{ backgroundColor: '#E6F8B2' }}>
       {previewVisible && (
-        <div className="col card container" style={{ backgroundColor: '#E6F8B2' }}>
-          <h3 className="card-body">Preview:</h3>
+        <div className="container card p-3" style={{ backgroundColor: '#E6F8B2' }}>
+          <h2 className="card-body">Preview:</h2>
           <div className="row card-body">
-            <h3 className="card-title"><b>Plant name: </b>"{plantName}"</h3>
-            <p className="card-text"><b>Additional info:</b> {additionalInfo}</p>
-            <p className="card-text"><b>Watering cycle:</b> {wateringCycle}</p>
-            <p className="card-text"><b>Watered:</b> {watered ? 'Yes' : 'No'}</p>
+
+            <h3 className="card-title"><b>Plant name: </b></h3>
+            <p>"{plantName}"</p>
+            <p className="card-text"><b>Additional info:</b></p> <p>{additionalInfo}</p>
+            <p className="card-text"><b>Watering cycle:</b> </p><p>{wateringCycle}</p>
+            <p className="card-text"><b>Watered:</b></p> <p>{watered ? 'Yes' : 'No'}</p>
             <img src={URL.createObjectURL(image)} alt={plantName} style={{ maxWidth: '200px' }} />
           </div>
         </div>
       )}
-      <form className="card NewUser" onSubmit={handleSubmit} style={{ backgroundColor: '#E6F8B2' }}>
+      <form className="NewUser" onSubmit={handleSubmit} style={{ backgroundColor: '#E6F8B2' }}>
         <div className="card-body" style={{ backgroundColor: '#E6F8B2' }}>
           <h3 className="card-title">New Plant</h3>
           <div className="form-group">
