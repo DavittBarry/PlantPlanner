@@ -7,6 +7,15 @@ background-color: #709176;
 outline: none; /* remove border */
 }
 
+.plant-card2 {
+width: 300px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #CDE77F;
+outline: none; /* remove border */
+}
+
 
 .card-spacing {
   margin: 10px;
@@ -20,7 +29,7 @@ height: 200px;
 .plant-info {
 display: flex;
 flex-wrap: wrap;
-
+height: 45vh;
 margin-top: 20px;
 background-color: #709176;
 }
@@ -36,12 +45,11 @@ background-color: #709176;
 .plant-text {
 flex-basis: 100%;
 padding: 10px;
+
 background-color: #709176;
 }
 
-.post-container p {
-  color: #CDE77F; /* brighter color similar to theme */
-}
+
 
 .plant-status {
 flex-basis: 100%;
